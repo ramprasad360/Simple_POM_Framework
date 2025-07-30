@@ -2,6 +2,7 @@ package pageObjects;
 import java.time.Duration;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 import utils.*;
 import org.apache.logging.log4j.Logger;
@@ -9,12 +10,14 @@ import org.apache.logging.log4j.Logger;
 public class LoginPage 
 {
 	WebDriver driver;
+	WebDriverWait wait;
 	private Logger log = LoggerUtil.getLogger(this.getClass());
 	
 	public LoginPage(WebDriver driver)
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
 //page elements
@@ -34,7 +37,7 @@ public class LoginPage
 	public void enterUserName(String user)
 	{
 		log.info("Entering username: " + user);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		wait.until(ExpectedConditions.visibilityOf(userName));
 		userName.clear();
 		userName.sendKeys(user);
 	}
@@ -42,7 +45,7 @@ public class LoginPage
 	public void enterPassword(String psw)
 	{
 		log.info("Entering password: " + psw);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		wait.until(ExpectedConditions.visibilityOf(password));
 		password.clear();
 		password.sendKeys(psw);
 	}
@@ -50,8 +53,7 @@ public class LoginPage
 	public void clickLogin()
 	{
 		log.info("Clicking on login button");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		wait.until(ExpectedConditions.visibilityOf(loginBtn));
 		loginBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	}	
 }
