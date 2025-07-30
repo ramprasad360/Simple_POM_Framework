@@ -2,7 +2,7 @@
 
 A lightweight and maintainable Selenium automation framework using the Page Object Model (POM) design pattern.
 
-## 🚀 Features
+## Features
 
 - Selenium WebDriver
 - Page Object Model (POM) design
@@ -13,7 +13,7 @@ A lightweight and maintainable Selenium automation framework using the Page Obje
 - Clean and modular folder structure
 
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - Java
 - Selenium WebDriver
@@ -22,7 +22,7 @@ A lightweight and maintainable Selenium automation framework using the Page Obje
 - WebDriverManager
 - ChromeOptions/FirefoxOptions
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository**
    ```bash
