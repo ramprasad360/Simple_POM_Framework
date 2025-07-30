@@ -17,7 +17,7 @@ public class RegressionTestSuite extends baseTest
         loginPage = new LoginPage(driver);
     }
     
-	@Test(priority=1,enabled=true)
+	@Test(description="to validate the login functionality",priority=1,enabled=true)
 	public void test_01() 
 	{
 		String user = "Admin";
