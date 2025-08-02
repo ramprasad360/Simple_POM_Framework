@@ -20,8 +20,8 @@ public class RegressionTestSuite extends baseTest
 	@Test(description= "to validate the login functionality",priority=1,enabled=true)
 	public void test_01() 
 	{
-		String user = "Admin";
-		String password = "Admin123";
+		String user = prop.getProperty("username");        
+        String password = prop.getProperty("password");
 		String expectedTitle = "OrangeHRM";
 		
 		loginPage.enterUserName(user);
