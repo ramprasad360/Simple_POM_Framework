@@ -5,12 +5,13 @@
     <classes>
       <class name="testSuite.RegressionTestSuite">
         <methods>
-          <include name="setupTest"/>
           <include name="flushReport"/>
-          <include name="setUp"/>
           <include name="test_01"/>
-          <include name="tearDown"/>
-          <include name="initReport"/>
+          <include name="initReportAndConfig"/>
+          <include name="tearDownMethod"/>
+          <include name="closeDriverAfterClass"/>
+          <include name="loginOncePerClass"/>
+          <include name="createTestLog"/>
         </methods>
       </class> <!-- testSuite.RegressionTestSuite -->
     </classes>

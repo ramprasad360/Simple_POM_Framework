@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rampr\AppData\Local\Temp\testng-eclipse--1480472969\testng-customsuite.xml</span>
+                    <span>C:\Users\rampr\AppData\Local\Temp\testng-eclipse-765396791\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,6 +130,8 @@
                   <a name="test_01">
                   </a> <!-- test_01 -->
                   <span class="method-name">test_01</span>
+                  <em>
+(to validate the login functionality)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +139,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rampr\AppData\Local\Temp\testng-eclipse--1480472969\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rampr\AppData\Local\Temp\testng-eclipse-765396791\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -190,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_01')
 data.setCell(0, 2, 'testSuite.RegressionTestSuite')
-data.setCell(0, 3, 2179);
+data.setCell(0, 3, 10);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -223,28 +225,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testSuite.RegressionTestSuite</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">initReport</span>
+                <span class="method-name">initReportAndConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">loginOncePerClass</span>
+                <span class="method-start">450 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void testSuite.RegressionTestSuite.test_01())</span>
-                <span class="method-start">400 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setupTest</span>
-                <span class="method-start">6182 ms</span>
+                <span class="method-name">createTestLog(public void testSuite.RegressionTestSuite.test_01())</span>
+                <span class="method-start">14907 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_01</span>
-                <span class="method-start">6216 ms</span>
+                <span class="method-start">14919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=test_01 status=SUCCESS method=RegressionTestSuite.test_01()[pri:1, instance:testSui...)</span>
-                <span class="method-start">8401 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=test_01 status=SUCCESS method=RegressionTestSuite.test_01()[pri:1, instance:testSui...)</span>
+                <span class="method-start">14931 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeDriverAfterClass</span>
+                <span class="method-start">14946 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">8766 ms</span>
+                <span class="method-start">15300 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

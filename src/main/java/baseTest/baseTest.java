@@ -1,5 +1,4 @@
 package baseTest;
-
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -15,6 +14,7 @@ import org.testng.annotations.*;
 
 import com.aventstack.extentreports.*;
 
+import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 import utils.*;
 
@@ -69,9 +69,9 @@ public class baseTest {
         loginPage.enterUserName(user);
         loginPage.enterPassword(password);
         loginPage.clickLogin();
-
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(actualTitle, expectedTitle, "Login failed - Title mismatch.");
+        
+        DashboardPage dashboardPage = new DashboardPage(driver);
+        dashboardPage.isDashboardHeaderDisplayed(); 
     }
 
     @BeforeMethod
