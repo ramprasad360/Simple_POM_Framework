@@ -69,9 +69,6 @@ public class baseTest {
         loginPage.enterUserName(user);
         loginPage.enterPassword(password);
         loginPage.clickLogin();
-        
-        DashboardPage dashboardPage = new DashboardPage(driver);
-        dashboardPage.isDashboardHeaderDisplayed(); 
     }
 
     @BeforeMethod
